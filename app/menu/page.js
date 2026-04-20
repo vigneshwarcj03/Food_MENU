@@ -109,7 +109,7 @@ export default function MenuPage() {
                   <img
                     src={section.items[0].image}
                     alt=""
-                    className="w-full h-56 object-cover"
+                    className="w-full h-66 object-cover"
                   />
 
                   {/* overlay for premium feel */}
@@ -146,11 +146,47 @@ export default function MenuPage() {
                   </div>
                 ))}
               </div>
-
             </div>
           ))}
 
         </div>
+
+{/* FOOTER */}
+<div className="mt-20 border-t border-white/10 pt-8 text-center space-y-3">
+
+  {/* LOGO (premium ring style) */}
+          <div className="flex justify-center">
+            
+              <div className="bg-[#0a0a0a] px-5 py-3 rounded-full">
+                <Image
+                  src="/logo.png"
+                  alt="Restaurant Logo"
+                  width={120}
+                  height={80}
+                  className="opacity-90"
+                  style={{ width: "auto", height: "auto" }}
+                />
+              </div>
+          </div>
+
+  <h3 className="text-sm tracking-[0.25em] text-yellow-400 uppercase">
+    A2B Chennai
+  </h3>
+
+  <p className="text-white/50 text-xs">
+    Pure Veg · ₹200–400 · Open till 11 PM
+  </p>
+
+  <div className="flex justify-center gap-6 text-xs text-white/40 pt-2">
+    <a href="https://www.aabsweets.com" target="_blank" className="hover:text-yellow-400 transition">
+      Website
+    </a>
+    <a href="tel:04440902207" className="hover:text-yellow-400 transition">
+      Call
+    </a>
+  </div>
+
+</div>
 
       </div>
     </div>
